@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SettingsActivity">
+
+
+    <ImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile_image">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/username_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/edit_profile"
+        android:layout_below="@id/settings_profile_image"
+        android:drawableTint="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:hint="Your Name..."
+        android:textColorHint="@android:color/white"
+        android:textSize="30dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/bio_settings"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/edit_status"
+        android:layout_below="@id/username_settings"
+        android:drawableTint="@android:color/white"
+        android:hint="Your Status..."
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+
+        />
+
+    <Button
+        android:id="@+id/save_settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bio_settings"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Save Details"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+</RelativeLayout>
